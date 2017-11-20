@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"bspv1.1\stm32f1xx_hal_msp.o"
+"bspv1.1\main.o"
+"bspv1.1\stm32f1xx_it.o"
+"bspv1.1\tim.o"
+"bspv1.1\gpio.o"
+"bspv1.1\usart.o"
+"bspv1.1\startup_stm32f103xe.o"
+"bspv1.1\stm32f1xx_hal_uart.o"
+"bspv1.1\stm32f1xx_hal_gpio_ex.o"
+"bspv1.1\stm32f1xx_hal_pwr.o"
+"bspv1.1\stm32f1xx_hal_flash.o"
+"bspv1.1\stm32f1xx_hal_rcc.o"
+"bspv1.1\stm32f1xx_hal_cortex.o"
+"bspv1.1\stm32f1xx_hal_gpio.o"
+"bspv1.1\stm32f1xx_hal_flash_ex.o"
+"bspv1.1\stm32f1xx_hal_rcc_ex.o"
+"bspv1.1\stm32f1xx_hal_tim.o"
+"bspv1.1\stm32f1xx_hal.o"
+"bspv1.1\stm32f1xx_hal_dma.o"
+"bspv1.1\stm32f1xx_hal_tim_ex.o"
+"bspv1.1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "BSPv1.1\BSPv1.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BSPv1.map" -o BSPv1.1\BSPv1.1
