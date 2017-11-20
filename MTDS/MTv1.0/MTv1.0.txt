@@ -1,0 +1,72 @@
+Configuration	MTv1.0
+STM32CubeMX 	4.22.1
+Date	11/16/2017
+MCU	STM32F103RCTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN0	ADC1_IN0	PA0-WKUP
+ADC1	Single-ended	ADC1_TempSens_Input	VP_ADC1_TempSens_Input
+DAC	DAC_OUT1	DAC_OUT1	PA4
+DAC	DAC_OUT2	DAC_OUT2	PA5
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PD0-OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PD1-OSC_OUT
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM4	Internal Clock	TIM4_VS_ClockSourceINT	VP_TIM4_VS_ClockSourceINT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+5	PD0-OSC_IN	RCC_OSC_IN	
+6	PD1-OSC_OUT	RCC_OSC_OUT	
+14	PA0-WKUP	ADC1_IN0	ADCInputPin
+20	PA4	DAC_OUT1	dacOutputChannel1
+21	PA5	DAC_OUT2	dacOutputChannel2
+42	PA9	USART1_TX	
+43	PA10	USART1_RX	
+44	PA11	USB_DM	
+45	PA12	USB_DP	
+46	PA13	SYS_JTMS-SWDIO	
+49	PA14	SYS_JTCK-SWCLK	
+51	PC10	GPIO_Output	BlueLED
+52	PC11	GPIO_Output	RedLED
+53	PC12	GPIO_Output	GreenLED
+58	PB6	I2C1_SCL	
+59	PB7	I2C1_SDA	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : MTv1.0
+Project Folder : E:\MotorTest\MTDS\MTv1.0
+Toolchain / IDE : EWARM
+Firmware Package Name and Version : STM32Cube FW_F1 V1.6.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
